@@ -5,48 +5,6 @@ import java.util.ArrayList;
 
 import checkers.*;
 
-/*
-    Algo parts:
-        - Evaluation function
-        - Depth Search
-        - Legal Move view 
-        - Capture view
-
-    Arch:
-        Point: {rank, file}
-        Piece: {ID: int, Point}
-        Move: {piece id: int, coords<Points>[], jump_count}
-        Board State: {bot_moves<Move>[], player_moves<Move>[]}
-        
-        ----PSEUDO----
-        Evaluate current
-        ID pieces
-        declare best state
-        Grabbing board states:
-            declare board state X
-            iterate over piece IDS
-                declare move ID
-                Make a legal bot move of ID
-                    if not locked -> T
-                    if locked:
-                        if jumpable:
-                            recursive jumpable condition, fill jump count
-                        else -> F
-                grab given move {ID, coords, jump_count}
-                create board state X+move
-                Make a legal player move of ID
-                    ^^^
-                recurse for depth, collect in Board[]
-                X = best move for piece based on highest evaluation
-            if X.eval > best.eval: best = X;
-        make first move in best board state
-            
-                
-                
-                
-
-*/
-
 public class Bot {
     // structs
     public static class Point{
