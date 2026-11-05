@@ -1,4 +1,2 @@
-back with beginnings of a checkers bot!
-this time we're in Java since might as well learn it
-# COME BACK LATER WHEN IT DOESNT SUCK PLEASE
-*you may look though*
+# TOY CHECKERS BOT WITH JAVA
+It is set up to play itself. If you're looking at this, you know how to comment stuff in and out in a main file. Do that if you want to play it. It is not good enough to reach a draw.
